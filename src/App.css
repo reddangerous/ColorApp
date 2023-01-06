@@ -1,38 +1,63 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100%; 
+ 
+  border: 1px solid mediumblue;
+  margin: auto;
+}
+html{
+  font-size: 36px;
+}
+.colorContainer{
+  width: 380px;
+  height: 380px;
+  border: 2px solid rgb(49, 48, 48);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #000;
+  display: grid;
+  place-content: center;
+
+}
+.colorContainer p{
+  display: grid;
+  place-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.search{
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search input[type ="text" ] {
+  width: 380px;
+  height: 40px;
+  border: 2px solid rgb(49, 49, 49);
+  border-radius: 5px;
+  font-size: 18px;
+  box-shadow: 3px 3px 6px #000;
+
+}
+.search label{
+  position: absolute;
+  left: -99999px;
+}
+.search button{
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+  background-color: rgb(141, 217, 226);
+  margin-top: 20px;
+  width: 300px;
+  margin-left: 50px;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 3px 3px 6px #000;
+  display: grid;
+  place-content: center;
 }
